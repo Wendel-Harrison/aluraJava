@@ -10,5 +10,17 @@ public class TestaMetodo {
 
         System.out.println("novo saldo: " + conta.saldo);
         System.out.println(conseguiuSacar);
+
+        Conta contaDaMarcela = new Conta();
+        contaDaMarcela.deposita(1000);
+
+        if(contaDaMarcela.transfere(3000, conta)) {
+            System.out.println("transferencia com sucesso");
+        } else  {
+            System.out.println("faltou money");
+        }
+
+        System.out.println("Conta da marcela" + contaDaMarcela.saldo);
+        System.out.println("Conta " + conta.saldo);
     }
 }
