@@ -3,5 +3,15 @@ public class TesteGetESet {
         Conta conta = new Conta();
         conta.setNumero(1337);
         System.out.println(conta.getNumero());
+
+        Cliente wendel = new Cliente();
+
+        wendel.setNome("Wendel Harrison");
+
+        System.out.println(wendel.getNome());
+
+        conta.setTitular(wendel);
+
+        System.out.println(conta.getTitular().getNome());
     }
 }
