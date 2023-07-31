@@ -6,15 +6,11 @@ public class TesteReferencias {
         String nome = g1.getNome();
         g1.setSalario(5000);
 
-        Funcionario f = new Funcionario();
-        f.setSalario(2000);
-
         EditorDeVideo e = new EditorDeVideo();
         e.setSalario(2500);
 
         ControleBonificacao controle = new ControleBonificacao();
         controle.registra(g1);
-        controle.registra(f);
         controle.registra(e);
 
 
