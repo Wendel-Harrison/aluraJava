@@ -1,4 +1,4 @@
-public class Fluxo {
+public class FluxoComTratamento {
     public static void main(String[] args) {
         System.out.println("ini do main");
         metodo1();
@@ -21,9 +21,8 @@ public class Fluxo {
     private static void metodo2() {
         System.out.println("Ini do metodo2");
 
-        throw new ArithmeticException("deu erro");
+        ArithmeticException ex = new ArithmeticException();
 
-
-//        System.out.println("Fim do metodo2");
+        System.out.println("Fim do metodo2");
     }
 }
