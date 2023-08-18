@@ -6,7 +6,7 @@ public abstract class Conta {
     private int numero;
     private Cliente titular ;
     private static int total;
-
+    
     public Conta(int agencia, int numero) {
         Conta.total++;
         //System.out.println("O total de contas é: " + total);
